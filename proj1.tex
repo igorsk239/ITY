@@ -6,7 +6,6 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{csquotes}
 \usepackage{multicol}
-%\usepackage{times}
 
 \title{Typografie a publikování - 1. projekt}
 \author{Igor Ignác (\texttt{xignac00@stud.fit.vutbr.cz})}
@@ -19,7 +18,7 @@
 \section{Hladká sazba}
 \label{sec:smooth}
 
-Hladká sazba používá jeden stupeň, druh a~řez písma a~je sázena na stanovenou šířku odstavce. Skládá se z~odstavců, obvykle začínajících zarážkou, nejde-li o~první odstavec za nadpisem. Mohou ale být sázeny i~bez zarážky - rozhodující je celková grafická úprava. Odstavec končí východovou řádkou. Věty nesmějí začínat číslicí.
+Hladká sazba používá jeden stupeň, druh a~řez písma a~je~sázena na stanovenou šířku odstavce. Skládá se z~odstavců, obvykle začínajících zarážkou, nejde-li o~první odstavec za nadpisem. Mohou ale být sázeny i~bez zarážky\,--\,rozhodující je celková grafická úprava. Odstavec končí východovou řádkou. Věty nesmějí začínat číslicí.
 \par
 Zvýraznění barvou, podtržením, ani změnou písma se v~odstavcích nepoužívá. Hladká sazba je určena především pro delší texty, jako je beletrie. Porušení konzistence sazby působí v~textu rušivě a~unavuje čtenářův zrak.
 
@@ -29,43 +28,48 @@ Zvýraznění barvou, podtržením, ani změnou písma se v~odstavcích nepouž�
 Smíšená sazba má o~něco volnější pravidla. Klasická hladká sazba se doplňuje o~další řezy písma pro zvýraznění důležitých pojmů. Existuje \uv{pravidlo}:
 
 \begin{displayquote}
-Čím více \textbf{druhů}, \textit{řezů}, {\footnotesize velikostí}, barev písma a~jiných{ \tiny \textbf{efektů}} použijeme, tím \textsl{profesionálněji} bude dokument vypadat. Čtenář tím bude{ \LARGE vždy}{ \huge NADŠEN!}
+
+Čím více \textbf{druhů}, \textit{řezů}, {\footnotesize velikostí}, barev písma a~jiných{ \tiny \textbf{efektů}} použijeme, tím \emph{profesionálněji} bude dokument vypadat. Čtenář tím bude{ \LARGE vždy}{ \huge NADŠEN!}
 \end{displayquote}
 
 \textsc{Tímto pravidlem se nikdy nesmíte řídit.} Příliš časté zvýrazňování textových elementů a~změny velikosti písma jsou známkou amatérismu autora a~působí velmi rušivě. Dobře navržený dokument nemá obsahovat více než
 4~řezy či druhy písma. Dobře navržený dokument je decentní, ne chaotický.
 \par
-Důležitým znakem správně vysázeného dokumentu je konzistence - například \textbf{\emph{tučný řez}} písma bude vyhrazen pouze pro klíčová slova, \textsl{skloněný řez} pouze pro doposud neznámé pojmy a~nebude se to míchat. Skloněný řez nepůsobí tak rušivě a používá se častěji. V \LaTeX u jej sázíme raději příkazem \verb|\emph{text}| než \verb|\textit{text}|.
+Důležitým znakem správně vysázeného dokumentu je konzistence\,--\,například \textbf{tučný řez} písma bude vyhrazen pouze pro klíčová slova, \emph{skloněný řez} pouze pro doposud neznámé pojmy a~nebude se to míchat. Skloněný řez nepůsobí tak rušivě a používá se častěji. V \LaTeX u jej sázíme raději příkazem \verb|\emph{text}| než \verb|\textit{text}|.
 \par
 Smíšená sazba se nejčastěji používá pro sazbu vědeckých článků a~technických zpráv. U~delších dokumentů vědeckého či technického charakteru je zvykem vysvětlit význam různých typů zvýraznění v~úvodní kapitole.
 
 \section{Další rady:}
 \label{sec:tips}
-\begin{itemize}
-  \item Nadpis nesmí končit dvojtečkou a~nesmí obsahovat odkazy na obrázky, citace, poznámky pod čarou, ...
 
-  %\columnbreak
+\begin{itemize}
+  \setlength\itemsep{0em}
+  \item Nadpis nesmí končit dvojtečkou a~nesmí obsahovat odkazy na obrázky, citace, poznámky pod čarou, \dots
+
+  \medbreak
 
   \item Nadpisy, číslování a~odkazy na číslované elementy musí být sázeny příkazy k~tomu určenými.
   \item Výčet ani obrázek nesmí začínat hned pod nadpisem a~nesmí tvořit celou kapitolu.
   \item Poznámky pod čarou\footnotemark[1] používejte opravdu střídmě. (Šetřete i s textem v závorkách.)
   \item Nepoužívejte velké množství malých obrázků. Zvažte, zda je nelze seskupit.
-  \item Bezchybným pravopisem a~sazbou dáváme najevo úctu ke čtenáři. Odbytý text s~chybami bude čtenář právem považovat za nedůvěryhodný
+  \item Bezchybným pravopisem a~sazbou dáváme najevo úctu ke čtenáři. Odbytý text s~chybami bude čtenář právem považovat za nedůvěryhodný.
 \end{itemize}
 
 \section{České odlišnosti}
 \label{sec:differences}
-Česká sazba se oproti okolnímu světu v~některých aspektech mírně liší. Jednou z~odlišností je sazba uvozovek. Uvozovky se v~češtině používají převážně pro zobrazení přímé řeči, zvýraznění přezdívek a~ironie. V~češtině se používají uvozovky typu \uv{9966} místo ``anglických'' uvozovek nebo \textquotedbl dvojitých \textquotedbl uvozovek. Lze je sázet připravenými příkazy nebo při použití UTF-8 kódování i~přímo.
+
+Česká sazba se oproti okolnímu světu v~některých aspektech mírně liší. Jednou z~odlišností je sazba uvozovek. Uvozovky se v~češtině používají převážně pro zobrazení přímé řeči, zvýraznění přezdívek a~ironie. V~češtině se používají uvozovky typu \uv{9966} místo ``anglických'' uvozovek nebo \textquotedbl dvojitých\textquotedbl uvozovek. Lze je sázet připravenými příkazy nebo při použití UTF-8 kódování i~přímo.
 \par
 Ve smíšené sazbě se řez uvozovek řídí řezem prvního uvozovaného slova. Pokud je uvozována celá věta, sází se koncová tečka před uvozovku, pokud se uvozuje slovo nebo část věty, sází se tečka za uvozovku.
 \par
-Druhou odlišností je pravidlo pro sázení konců řádků. V české sazbě by řádek neměl končit osamocenou jednopísmennou předložkou nebo spojkou. Spojkou \uv{a}~končit může pouze při sazbě do šířky 25 liter. Abychom \LaTeX u zabránili v~sázení osamocených předložek, spojujeme je s~následujícím slovem \emph{nezlomitelnou mezerou}. Tu sázíme pomocí znaku \textasciitilde (vlnka, tilda). Pro systematické doplnění vlnek slouží volně šiřitelný program \emph{vlna} od pana Olšáka\footnotemark[2].
+Druhou odlišností je pravidlo pro sázení konců řádků. V české sazbě by řádek neměl končit osamocenou jednopísmennou předložkou nebo spojkou. Spojkou \uv{a}~končit může pouze při sazbě do šířky 25 liter. Abychom \LaTeX u zabránili v~sázení osamocených předložek, spojujeme je s~následujícím slovem \emph{nezlomitelnou mezerou}. Tu sázíme pomocí znaku \verb|~| (vlnka, tilda). Pro systematické doplnění vlnek slouží volně šiřitelný program \emph{vlna} od pana Olšáka\footnotemark[2].
 \par
 Balíček \texttt{fontenc} slouží ke korektnímu kódovaní znaků s~diakritikou, aby bylo možno v~textu vyhledávat a~kopírovat z~něj.
 
 \section{Záveř}
 \label{sec:end}
-Tento dokument schválně obsahuje několik typografických prohřešků. Sekce %\hyperref[sec:mixed]{2} a \hyperref[sec:tips]{3} obsahují typografické chyby. V kontextu celého textu je jistě snadno najdete. Je dobré znát možnosti \LaTeX u, ale je také nutné vědět, kdy je nepoužít.
+
+Tento dokument schválně obsahuje několik typografických prohřešků. Sekce \hyperref[sec:mixed]{2} a \hyperref[sec:tips]{3} obsahují typografické chyby. V kontextu celého textu je jistě snadno najdete. Je dobré znát možnosti \LaTeX u, ale je také nutné vědět, kdy je nepoužít.
 \footnotetext[1]{Příliš mnoho poznámek pod čarou čtenáře zbytečně rozptyluje.}
 \footnotetext[2]{Viz \url{http://petr.olsak.net/ftp/olsak/vlna/}}
 

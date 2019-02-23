@@ -8,8 +8,8 @@ build: $(NAME).tex
 		ps2pdf $(NAME).ps
 
 clean:
-		-rm $(NAME).dvi $(NAME).aux $(NAME).ps $(NAME).pdf
+		-rm $(NAME).dvi $(NAME).aux $(NAME).ps $(NAME).log $(NAME).out
 
 compress:
-		tar -cf xignac00.tar $(NAME).tex Makefile
-		gzip xignac00.tar
+		tar -cf xignac00-fit.tar $(NAME).tex Makefile
+		gzip xignac00-fit.tar
