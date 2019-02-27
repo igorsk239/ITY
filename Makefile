@@ -4,6 +4,7 @@ all: clean build
 
 build: $(NAME).tex
 		latex $(NAME).tex
+		latex $(NAME).tex	#cross reference solution
 		dvips -t a4 $(NAME).dvi
 		ps2pdf $(NAME).ps
 
