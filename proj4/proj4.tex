@@ -1,0 +1,85 @@
+\documentclass[a4paper, titlepage, 11pt]{article}
+\usepackage[left=2cm,text={17cm, 24cm}, top=3cm]{geometry}
+\usepackage{times}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+
+\bibliographystyle{czplain}
+
+% Fixing problem with \underful hbox{10000}
+\usepackage{etoolbox}
+\apptocmd{\thebibliography}{\raggedright}{}{}
+
+
+\begin{document}
+
+  \begin{titlepage}
+    \begin{center}
+      \Huge \textsc{Vysoké učení technické v~Brně}\\
+      \huge \textsc{Fakulta informačních technologií}\\
+      \vspace{\stretch{0.382}}
+      \LARGE Typografie a publikování\,--\,4. projekt\\
+      \Huge Bibliografické citace
+      \vspace{\stretch{0.618}}
+    \end{center}
+    {\Large 7. dubna 2019 \hfill Igor Ignác}
+  \end{titlepage}
+
+\section{Typografia}
+\subsection{Digital Typography}
+
+  The term "Digital Typography" refers to the preparation of printed matter by using only
+  electronic computers and electronic printing devices, such as laser-jet printers. Since
+  electronic printing devices are widely available, one often needs a~digital typesetting
+  system. \TeX\ is a~digital typesetting system designed by Donald E. Knuth
+  \cite{book:29389}.\newline
+
+  \noindent Typografia má však svoje limity. Limity v tom čoho je schopná a~to napriek tomu, že je užitočná aj ako umenie. Presnejšie je uznávaná ako umenie, ktoré je schopné prenášať informáciu, avšak je stále považovaná za druhutné umenie
+  \cite{article:75643}.\newline
+
+  \noindent Napriek tomu typografia má taktiež potenciál byť zaradenou do súčastného umenia a~to pomocou interakcie dynamizmu a digitálnej typografie
+  \cite{article:59853}.
+
+
+\subsection{Malé kapitálky}
+
+  Čítateľova túžba po malých kapitálkach v~tlačených publikáciach je indikovaná potrebou zdôrazniť časti text podčiarknutím slov dvojitou čiarou. V~bežných fontoch sú kapitálky veľké približne ako malé písmená daného fontu
+  \cite{book:110635}.
+
+\subsection{Písmo}
+
+  \subsubsection{Hrúbka písma}
+
+    Hrúbka, alebo inak povedané váha písma popisuje relatívnu hrúbku ťahu v danom druhu písma. Typ písma môže mať niekoľko takýchto hrúbok. Typicky sa používa hrúbka od 4 do 6
+    \cite{article:79535}.
+
+  \subsubsection{Veľkosť písma}
+
+    Najtypickejšou metódou používanou pre meranie veľkosti písma je bodový systém. Tento systém sa používal už v 18. storočí. Jeden bod je 1/72 palca. Následne 12 bodov tvorí jednu picu. Pica je jednotka používaná na meranie šírky stĺpcov. Okrem spomenutých jednotiek je možné použiť taktiež milimetre alebo pixely
+    \cite{article:71564}.
+
+\subsection{Typografie vo filme}
+
+  Disney~a Pixar použili vo svojom filme Monster Inc.'s jeden z najúspešnejších príkladov animácie vo filme. Jasne sfarbené, ručne kreslené vizuály umiestnené na čiernom pozadí názvu filmu konštantne~a pravidelne menia svoje miesto na scéne. Typografické elementy majú neustále priamy kontakt~s týmito vizualizáciami
+  \cite{article:42364}.
+
+
+\subsection{Integrály}
+
+  Nerastúca distribučná funkcia $\mu(\{f \geq t\})$ nachádzajúca sa~v každom integrále môže byť nahradená $\mu(\{f > t\})$ bez hociakej zmeny. Taktiež, pre Sugenove~a Shilkretove integrály je možné uzavretý interval $[0, \infty]$ nahradiť otvoreným intervalom $(0, \infty)$
+  \cite{article:56146}.
+
+
+\subsection{Typy AR zariadení}
+
+Ľudské videnie je najviac efektívnym zmyslom pre príjmanie informácii~z okolia. Mnoho dnešných AR zariadení sa zameriava na poskytnutie informácii užívateľovi práve touto formou. Niektoré zariadenia kombinujú vizuálny prírastok spolu~s priestorovým zvukom
+\cite{mastersthesis:96345}.
+
+\subsection{Diamanty}
+Diamanty sa vyskytujú vo vyváženom prostredí, kde viac ako jedna sonda je posielaná vo for each skoku. Pár listov je považovaných za diamant, ak obsahuje dva alebo viac rozhraní, ktoré sú medzi nimi.
+\cite{mastersthesis:97465}.
+
+
+\newpage
+\bibliography{proj4}
+\end{document}
